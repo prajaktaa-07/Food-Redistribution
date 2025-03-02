@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("o.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(184, 166, 25);
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: white;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700; /* Bright gold for better visibility */
+    text-shadow: 1px 1px 2px black;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #97958a; /* Gold border for clarity */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(255, 215, 0, 0.8);
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+button {
+    padding: 14px;
+    background: linear-gradient(45deg, #ff6f61, #ff4757);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px rgba(255, 71, 87, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #d9534f, #c82333);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 71, 87, 0.7);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.3);
+    margin: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: rgba(215, 36, 36, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 10px rgba(138, 40, 40, 0.5);
+}
+
+.food-info {
+    color: #c2bc97; /* Gold for visibility */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 12px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.5);
+}
